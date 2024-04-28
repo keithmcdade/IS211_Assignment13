@@ -35,12 +35,14 @@ def compare_test(a, b):
     else:
         return False
 
-print(fibonacci(10))    
-print(gcd(36, 120))
-print(compare_to("string", "STRING"), compare_to("longer string", "string"), compare_to("string", "longer string"))
 
-s1 = "longer string"
-s2 = "string"
-a = compare_to(s1, s2)
-b = len(s1) - len(s2)
-print(compare_test(a, b))
+if __name__ == "__main__":
+    print(fibonacci(10))    
+    print(gcd(36, 120))
+    print(compare_to("string", "STRING"), compare_to("longer string", "string"), compare_to("string", "longer string"))
+
+    s1 = "longer string"
+    s2 = "string"
+    a = compare_to(s1, s2)
+    b = len(s1) - len(s2)
+    print(compare_test(a, b))
